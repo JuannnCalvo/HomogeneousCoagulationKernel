@@ -1,0 +1,14 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2576
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs48 \cf0 This routine performs the inversion for a self-similar profile given by an explicit formula provided by the user (subroutine "ge" in the Utilities.c file). No knowledge is assumed on the homogeneity degree of the kernel; the optimal homogeneity degree is obtained via a minimization procedure for the residuals. The routine uses Brent's minimization algorithm for one-variable functions, where the function to be minimized is given as follows: for a given value of the homogeneity degree of the kernel, we compute the associated L-curve, find the optimal regularization weight and return the associated residual. The integrals appearing in the formulation of the inverse problem are approximated numerically. \
+\
+This routine takes no input file so far. The starting values for Brent's algorithm are currently specified in Main.c (lines 9 and 22).\
+\
+The given output is a five-column display after the GSL implementation of Brent's algorithm, stating: the current iteration, the current minimization interval, the current aproximation to the minimum and the lenght of the minimization interval -the tolerances can be modified in Main.c, line 54.  \
+\
+Once the optimal homogeneity degree is obtained, the kernel can be reconstructed using some of the companion routines.}
