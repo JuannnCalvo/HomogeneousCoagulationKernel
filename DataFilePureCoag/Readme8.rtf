@@ -1,0 +1,14 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2576
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs48 \cf0 This routine performs the inversion for a self-similar profile given by a data set provided by the user. This data set is fit with a linear combination of B-splines as a way to filter the input. The resulting regularized input is displayed for the user to decide whether this smoothing is reasonable (e.g. depending on the input file negative values may be produced). In case that this smoothing procedure does not work fine, the user is advised to look for alternative procedures; e.g. implementing logarithmically spaced B-splines or performing a fit with a linear combination of gamma distributions -this might give better results in some cases and would allow for a semi-explicit treatment as it is done in some of the companion routines, see also [H. Wright, D. Ramkrishna, Computers Chem. Engng. 16 (1992), 1019]. \
+\
+The routine produces the associated L- and GCV-curves, together with the optimal reconstructions for the kernel. The integrals appearing in the formulation of the inverse problem are approximated numerically.\
+\
+Two input files should be given. The first one is the set of measurements, in two-column format (abcisae and ordinates). The second one is provided to input a set of parameters (currently just the homogeneity degree of the kernel).\
+\
+The given output consist on three parts. First, the reconstructed input is displayed. If this curve does not reproduce the main features of the input file correctly then the final result is likely to be wrong -a different filtering procedure would be therefore advised. Then the optimal reconstructions according to the L- and GCV curves are given in a two-column format. The third part consists in a four-column display with the values of the L- and GCV-curves. At the end of the output, the L-curve corner point and the GCV corner minimum are also given.}
