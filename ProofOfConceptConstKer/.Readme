@@ -1,7 +1,0 @@
-There are three different routines. All of them use the explicit formula for the self-similar profile associated with the constant kernel -modulo rescalings. Several integrals appearing in the formulation of the inverse problem can be computed analytically in this case.
-
-The basic routine performs the inversion for a given value of the regularization parameter lambda; note that the weight in the functional to be minimized is given by lambda^2. The routine takes as input a file containing the desired value of lambda. The ouput is a two-column display containing the reconstructed homogenous kernel as a function of the normalized variable z.
-
-A second routine computes the associated L- and GCV-curves. It takes no input. The given output consists of: i) the optimal reconstructions according to the L- and GCV curves, given in a two-column format, ii) a four-column display with the values of the L- and GCV-curves, iii) the L-curve corner point and the GCV corner minimum.
-
-A third routine is provided to asses the performance of the inversion methodology. No input is needed; on output, a L^2 distance is computed between the actual kernel and the profile generated via the inversion methodology, as a function of the regularization parameter lambda -being lambda^2 the weight in the functional to be minimized. The output is a two-column display with values of lambda and the associated distances. In this way we can assess that the L-curve methodology performs much better than the GCV curve for this particular problem. 
