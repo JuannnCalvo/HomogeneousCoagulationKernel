@@ -1,0 +1,12 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2576
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs48 \cf0 This routine performs the inversion for a self-similar profile given by a gamma distribution (g(z)=z^-lambda e^(-delta z), where lambda is the (given) homogeneity degree of the kernel, not to confuse with the regularization weight -please note that the routine will not handle properly homogeneities equal or greater than one). The routine produces the associated L- and GCV-curves, together with the optimal reconstructions for the kernel. Several integrals appearing in the formulation of the inverse problem can be computed analytically in this case. \
+\
+The input file should contain the parameters lambda and delta. The self-similar profile for the constant kernel can be used here as a test case -the GCV-curve does not yield a reasonable reconstruction.\
+\
+The given output consists of: i) the optimal reconstructions according to the L- and GCV curves, given in a two-column format, ii) a four-column display with the values of the L- and GCV-curves, iii) the L-curve corner point and the GCV corner minimum.}
